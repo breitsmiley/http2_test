@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+
+{% block body %}
+    <h1> HTTP/2 WebLink (serverPush) in twig</h1>
+
+    <link href="{{ preload(asset('images/1.jpg'), { as: 'image' }) }}">
+    <link href="{{ preload(asset('images/2.jpg'), { as: 'image' }) }}">
+    <link href="{{ preload(asset('images/3.jpg'), { as: 'image' }) }}">
+    <link href="{{ preload(asset('images/4.jpg'), { as: 'image' }) }}">
+    <link href="{{ preload(asset('images/5.jpg'), { as: 'image' }) }}">
+    <link href="{{ preload(asset('js/jquery-3.2.1.js'), { as: 'script' }) }}">
+{% endblock %}
+

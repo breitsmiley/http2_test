@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Bridge\Twig\Extension\WebLinkExtension;
 
 class DefaultController extends Controller
 {
@@ -13,9 +14,10 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
+
+//        $weblink = $this->get(WebLinkExtension::class);
+//        $weblink->
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-        ]);
+        return $this->render('default/http2.html.twig');
     }
 }
